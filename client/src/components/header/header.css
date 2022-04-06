@@ -1,0 +1,10 @@
+.nav-ul{
+    background-color: red;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-li{
+   
+}
