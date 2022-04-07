@@ -9,7 +9,7 @@
     @include breakpoint(md) {
         padding: 0 3rem;
     }
-    transition: 0.3s easy alli;
+    transition: 0.3s ease all;
 
     &_content {
         overflow: hidden;
@@ -44,7 +44,7 @@
             background: rgba($dark, 0.9);
             backdrop-filter: blur(2px);
             transform: translate(0);
-            transition: 0.3s easy transform;
+            transition: 0.3s ease transform;
 
             @include breakpoint(md) {
                 transform: none;
@@ -58,6 +58,7 @@
                 list-style: none;
                 display:flex;
                 flex-direction: column;
+                padding: 0;
                 margin-bottom: $spacing-lg;
                 @include breakpoint(md) {
                     flex-direction: row;
@@ -100,7 +101,7 @@
                 background:$primary;
                 color: $dark;
                 border: 1px solid transparent;
-                transition: 0.3s easy all;
+                transition: 0.3s ease all;
 
                 &:hover{
                     border-color: $primary;
@@ -114,7 +115,7 @@
                 }
             }
             &.isMenu{
-                transform: translate(100%);
+                 transform: translate(100%);
             }
         }
         &_toggle{
@@ -122,7 +123,7 @@
             display:flex;
             align-items: center;
             font-size: 2rem;
-            transition: 0.3s easy all;
+            transition: 0.3s ease all;
             position: relative;
 
             &:hover{

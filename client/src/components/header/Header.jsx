@@ -1,11 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import'./header.css'
 import classes from './Header.module.scss'
 import {AiOutlineClose} from 'react-icons/ai';
 import {BiMenuAltRight} from 'react-icons/bi';
+import { useEffect } from 'react';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [size, setSize] = useState({
+    width: undefined,
+    height: undefined,
+  })
+  useEffect(() => {
+        const handleResize = () => {
+          setSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          })
+        }
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  useEffect(() => {
+    if(size.width > 768 && menuOpen){
+    setMenuOpen(true)
+  }
+  }, [size.width, menuOpen])
+
+
+  //ist to open and close menu
+  const menuToogleHandler = () => {
+    setMenuOpen((p) => !p);
+  }
+
+
   return (
 
     //classes.header is in header.module.scss
@@ -15,7 +45,7 @@ const Header = () => {
      
 
       {/* nav is inside header */}
-        <nav className={classes.header_content_nav}>
+        <nav className={`${classes.header_content_nav} ${menuOpen ? classes.isMenu : ""}`}>
           <ul>
             <li>
               <Link to={"/"} >Home</Link>
@@ -31,11 +61,11 @@ const Header = () => {
           <button>CTA page</button>
         </nav>
         {/* toggle navbar */}
-        <div className="classes.header_content_toggle">
-          <BiMenuAltRight />
+        <div className={classes.header_content_toggle}>
+          {menuOpen ? ( <BiMenuAltRight onClick={menuToogleHandler} /> ) : ( <AiOutlineClose onClick={menuToogleHandler} /> ) }
 
         </div>
-        
+
         {/* closing header-content div */}
         </div>
     </header>
