@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import'./header.css'
-import classes from '.Header.module.scss'
+import classes from './Header.module.scss'
 import {AiOutlineClose} from 'react-icons/ai';
+import {BiMenuAltRight} from 'react-icons/bi';
 
 const Header = () => {
   return (
@@ -10,8 +11,8 @@ const Header = () => {
     //classes.header is in header.module.scss
     <header className={classes.header}>
       <div className={classes.header_content}>
-      <h2>navbar</h2>
-      </div>
+      <h2 className={classes.header_logo}>navbar</h2>
+     
 
       {/* nav is inside header */}
         <nav className={classes.header_content_nav}>
@@ -31,9 +32,12 @@ const Header = () => {
         </nav>
         {/* toggle navbar */}
         <div className="classes.header_content_toggle">
+          <BiMenuAltRight />
 
         </div>
-
+        
+        {/* closing header-content div */}
+        </div>
     </header>
   )
 }
