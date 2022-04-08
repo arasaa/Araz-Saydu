@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import'./header.css'
 import classes from './Header.module.scss'
 import {AiOutlineClose} from 'react-icons/ai';
 import {BiMenuAltRight} from 'react-icons/bi';
@@ -49,6 +48,7 @@ const Header = () => {
           <ul>
             <li>
               <Link to={"/"} >Home</Link>
+              
             </li>
             <li>
               <Link to={"/about"} >About</Link>
@@ -62,7 +62,7 @@ const Header = () => {
         </nav>
         {/* toggle navbar */}
         <div className={classes.header_content_toggle}>
-          {menuOpen ? ( <BiMenuAltRight onClick={menuToogleHandler} /> ) : ( <AiOutlineClose onClick={menuToogleHandler} /> ) }
+          {menuOpen ?  ( <AiOutlineClose onClick={menuToogleHandler} /> ) :  ( <BiMenuAltRight onClick={menuToogleHandler} /> )  }
 
         </div>
 
