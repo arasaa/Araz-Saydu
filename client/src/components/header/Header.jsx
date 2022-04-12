@@ -11,6 +11,16 @@ const Header = () => {
     width: undefined,
     height: undefined,
   })
+
+
+  //closing menu when it is media screen and BiMenuAltRight is open
+  const closeMenu = () => {
+    if(menuOpen){
+      setMenuOpen(false)
+    }
+  }
+
+
   useEffect(() => {
         const handleResize = () => {
           setSize({
@@ -40,25 +50,28 @@ const Header = () => {
     //classes.header is in header.module.scss
     <header className={classes.header}>
       <div className={classes.header_content}>
-      <h2 className={classes.header_logo}>navbar</h2>
+      <h2 className={classes.header_logo}>Araz Saydu</h2>
      
 
       {/* nav is inside header */}
         <nav className={`${classes.header_content_nav} ${menuOpen ? classes.isMenu : ""}`}>
-          <ul>
-            <li>
-              <Link to={"/"} >Home</Link>
+          <ul >
+            <li onClick={closeMenu}>
+              <Link to={"/"}>Home</Link>
               
             </li>
-            <li>
+            <li onClick={closeMenu}>
               <Link to={"/about"} >About</Link>
             </li>
-            <li>
+            <li onClick={closeMenu}>
+              <Link to={"/projects"} >Projects</Link>
+            </li>
+            <li onClick={closeMenu}>
               <Link to={"/gallery"} >Gallery</Link>
             </li>
           </ul>
           {/* button is inside NAV */}
-          <button>CTA page</button>
+          {/* <button>CTA page</button> */}
         </nav>
         {/* toggle navbar */}
         <div className={classes.header_content_toggle}>
