@@ -50,10 +50,11 @@ const Header = () => {
     //classes.header is in header.module.scss
     <header className={classes.header}>
       <div className={classes.header_content}>
-      <h2 className={classes.header_logo}>Araz Saydu</h2>
-     
+        <div>
+      <h1 className={classes.header__logo}>Araz Saydu</h1>
+      </div>
 
-      {/* nav is inside header */}
+      {/* nav is inside header && content*/}
         <nav className={`${classes.header_content_nav} ${menuOpen ? classes.isMenu : ""}`}>
           <ul >
             <li onClick={closeMenu}>

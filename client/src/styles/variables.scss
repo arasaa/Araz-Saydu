@@ -19,7 +19,18 @@ $borderRadius: 12px;
 //header height
 $headerHeight: 100px; 
 
-//mixin
+//mixin middle breakpoint
+@mixin breakpoint($point) {
+    @if $point == Midd {
+        //768px
+        @media (min-width: 53.625em) {
+            @content;
+        }
+    }
+}
+
+
+//mixin media breakpoint
 @mixin breakpoint($point) {
     @if $point == md {
         //768px
