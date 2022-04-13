@@ -4,6 +4,7 @@ import classes from './Header.module.scss'
 import {AiOutlineClose} from 'react-icons/ai';
 import {BiMenuAltRight} from 'react-icons/bi';
 import { useEffect } from 'react';
+import StickySidebar from './StickySidebar';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -47,7 +48,7 @@ const Header = () => {
 
   return (
 
-    //classes.header is in header.module.scss
+    <>    //classes.header is in header.module.scss
     <header className={classes.header}>
       <div className={classes.header_content}>
         <div>
@@ -81,8 +82,13 @@ const Header = () => {
         </div>
 
         {/* closing header-content div */}
+        
         </div>
+
     </header>
+        <StickySidebar />
+    </>
+
   )
 }
 

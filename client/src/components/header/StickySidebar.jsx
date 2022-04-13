@@ -1,7 +1,7 @@
 import React from 'react'
-// import './test.css'
+import './stickySidebar.css'
 
-const Example = () => {
+const StickySidebar = () => {
   return (
     <>
         <div className="sticky-sidebar-lesson">
@@ -19,4 +19,4 @@ const Example = () => {
   )
 }
 
-export default Example
+export default StickySidebar
