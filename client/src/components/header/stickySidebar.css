@@ -5,18 +5,25 @@
    /* width: 80%; */
    /* margin: 0 auto; */
    align-items: center;
+   position: relative;
   
  } 
- .sticky-sidebar-lesson:hover{
-
-
- }
  
-.sticky-sidebar-lesson::after {
-   display: table;
+.sticky-sidebar::before,
+.sticky-sidebar::after {
+  content: attr(data-tooltip);
+  color: rgb(58, 4, 4);
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  border: 1px solid rgb(5, 49, 90);
+  height: 10em;
+  transform: translateX(-50%) ;
+
+   /* display: table;
    content: "";
-   clear: both;
- } 
+   clear: both; */
+ }  
  
  /* .sticky-sidebar-lesson .sandbox {
    width: 60%;

@@ -7,7 +7,7 @@ const StickySidebar = () => {
         <div className="sticky-sidebar-lesson">
       {/* <h1><small>Day #15</small> Sticky Sidebar <small>Final Version</small></h1> */}
 
-      <div className="sticky-sidebar">
+      <div className="sticky-sidebar"  data-tooltip={"aras is a full stack web developer"}>
         <h4>Sticky sidebar!</h4>
         <p>Scroll down to see.</p>
       </div>
