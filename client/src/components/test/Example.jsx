@@ -1,22 +1,53 @@
-import React from 'react'
-// import './test.css'
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import FormControl from '@mui/material/FormControl';
+import SpeedDial from '@mui/material/SpeedDial';
+// import SpeedDialIcon from '@mui/material/SpeedDialIcon';
+import SpeedDialAction from '@mui/material/SpeedDialAction';
+import FacebookOutlined from '@material-ui/icons/Facebook';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
-const Example = () => {
+const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
+  position: 'absolute',
+  '&.MuiSpeedDial-directionUp, &.MuiSpeedDial-directionLeft': {
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+  },
+  '&.MuiSpeedDial-directionDown, &.MuiSpeedDial-directionRight': {
+  },
+}));
+
+const actions = [
+  { icon: <FacebookOutlined />, name: 'Copy' },
+  { icon: <FacebookOutlined />, name: 'Save' },
+  { icon: <FacebookOutlined />, name: 'Print' },
+  { icon: <FacebookOutlined />, name: 'Share' },
+];
+
+export default function PlaygroundSpeedDial() {
+  const [direction, setDirection] = React.useState('up');
+
+
   return (
-    <>
-        <div className="sticky-sidebar-lesson">
-      {/* <h1><small>Day #15</small> Sticky Sidebar <small>Final Version</small></h1> */}
-
-      <div className="sticky-sidebar">
-        <h4>Sticky sidebar!</h4>
-        <p>Scroll down to see.</p>
-      </div>
-
-    </div>
-
-    </>
-    
-  )
+    <Box sx={{ transform: 'translateZ(0px)', flexGrow: 1 }}>
+      <FormControl component="fieldset" sx={{ mt: 1, display: 'flex' }}>
+      </FormControl>
+      <Box sx={{ position: 'relative', mt: 3, height: 320 }}>
+        <StyledSpeedDial
+          ariaLabel="SpeedDial playground example"
+          icon={<FavoriteIcon />}
+          direction={direction}
+        >
+          {actions.map((action) => (
+            <SpeedDialAction
+              key={action.name}
+              icon={action.icon}
+              tooltipTitle={action.name}
+            />
+          ))}
+        </StyledSpeedDial>
+      </Box>
+    </Box>
+  );
 }
-
-export default Example

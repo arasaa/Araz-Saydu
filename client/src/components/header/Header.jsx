@@ -48,7 +48,8 @@ const Header = () => {
 
   return (
 
-    <>    //classes.header is in header.module.scss
+    <>    
+    {/* //classes.header is in header.module.scss */}
     <header className={classes.header}>
       <div className={classes.header_content}>
         <div>

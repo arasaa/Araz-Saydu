@@ -1,16 +1,26 @@
-import React from 'react'
-import './stickySidebar.css'
+import React from 'react';
+import './stickySidebar.css';
+import FacebookOutlined from '@material-ui/icons/Facebook'
+import Example from '../test/Example';
 
-const StickySidebar = () => {
+function social(){
+
+  return (
+    <h1 style={{color: 'white'}}>aras aras</h1>
+  )
+} 
+const StickySidebar = (props) => {
+  
   return (
     <>
-        <div className="sticky-sidebar-lesson">
+        <div  className="sticky-sidebar"  >
+          {/* className="sticky-sidebar-lesson" */}
       {/* <h1><small>Day #15</small> Sticky Sidebar <small>Final Version</small></h1> */}
 
-      <div className="sticky-sidebar"  data-tooltip={"aras is a full stack web developer"}>
-        <h4>Sticky sidebar!</h4>
-        <p>Scroll down to see.</p>
-      </div>
+      {/* data-tooltip='' */}
+      {/* className="sticky-sidebar" */}
+
+        <Example />
 
     </div>
 
