@@ -19,8 +19,9 @@ const StickySidebar = (props) => {
 
       {/* data-tooltip='' */}
       {/* className="sticky-sidebar" */}
-
-        <Example />
+        <div className="PlaygroundSpeedDial">
+         <Example />
+        </div>
 
     </div>
 

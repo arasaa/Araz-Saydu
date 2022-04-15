@@ -3,38 +3,37 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 import SpeedDial from '@mui/material/SpeedDial';
-// import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import FacebookOutlined from '@material-ui/icons/Facebook';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import TelegramIcon from '@material-ui/icons/Telegram';
 
 const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
   position: 'absolute',
-  '&.MuiSpeedDial-directionUp, &.MuiSpeedDial-directionLeft': {
-    bottom: theme.spacing(2),
-    right: theme.spacing(2),
-  },
-  '&.MuiSpeedDial-directionDown, &.MuiSpeedDial-directionRight': {
+  '&.MuiSpeedDial-directionDown': {
   },
 }));
 
 const actions = [
-  { icon: <FacebookOutlined />, name: 'Copy' },
-  { icon: <FacebookOutlined />, name: 'Save' },
-  { icon: <FacebookOutlined />, name: 'Print' },
-  { icon: <FacebookOutlined />, name: 'Share' },
+  { icon: <a href="https://github.com/arasaa" target="_blank"> <GitHubIcon /></a>, name: 'Github' },
+  { icon: <a href="https://www.linkedin.com/in/araz-saydu-594940198/" target="_blank"> <LinkedInIcon /></a>, name: 'Linkedin' },
+  { icon: <a href="https://twitter.com/home" target="_blank"><TwitterIcon /></a>, name: 'Print' },
+  { icon: <a href="https://t.me/Aras_Ali1"><TelegramIcon color="secondary" target="_blank"/></a>, name: 'Share' },
 ];
 
 export default function PlaygroundSpeedDial() {
-  const [direction, setDirection] = React.useState('up');
-
-
+  const [direction, setDirection] = React.useState('down');
   return (
     <Box sx={{ transform: 'translateZ(0px)', flexGrow: 1 }}>
       <FormControl component="fieldset" sx={{ mt: 1, display: 'flex' }}>
       </FormControl>
-      <Box sx={{ position: 'relative', mt: 3, height: 320 }}>
+      <Box sx={{ position: 'relative', mt: -1.4, height: 320, backgroundColo: 'primary.main', }}>
         <StyledSpeedDial
+        // style={{color: 'red'}}
+        
           ariaLabel="SpeedDial playground example"
           icon={<FavoriteIcon />}
           direction={direction}
