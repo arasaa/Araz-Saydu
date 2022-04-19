@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Montserrat:ital,wght@1,500&family=Urbanist:wght@200&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Caveat:wght@700&family=Montserrat:ital,wght@1,500&family=Urbanist:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Caveat:wght@700&family=Montserrat:ital,wght@1,500&family=Shadows+Into+Light&family=Urbanist:wght@200&display=swap');
 body {
     background: #252839;
     font-family: 'Beau Rivage', cursive;
@@ -54,4 +55,38 @@ body {
 .self-pic{
     opacity: 0.09;
     border: 0;
+}
+.skill-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-div{
+    color: white;
+    font-size: 2em;
+    font-family: 'Architects Daughter', cursive;
+
+}
+.skill-JAVA{
+    color: yellow;
+}
+.skill-JAVA:hover{
+    /* border-bottom: 2px solid red; */
+}
+.skill-JAVA::after{
+    content: "";
+    position: absolute;
+    height: 0.175rem;
+    left: 14.9em;
+    bottom: -1.5em;
+    background: rgb(255, 251, 0);
+    width: 5em;
+}
+
+.center::after{
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+.center:hover::after{
+    transform: scale(1, 1);
 }

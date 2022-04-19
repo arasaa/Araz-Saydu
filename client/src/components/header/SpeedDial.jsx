@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import FacebookOutlined from '@material-ui/icons/Facebook';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -20,20 +19,18 @@ const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
 const actions = [
   { icon: <a href="https://github.com/arasaa" target="_blank"> <GitHubIcon /></a>, name: 'Github' },
   { icon: <a href="https://www.linkedin.com/in/araz-saydu-594940198/" target="_blank"> <LinkedInIcon /></a>, name: 'Linkedin' },
-  { icon: <a href="https://twitter.com/home" target="_blank"><TwitterIcon /></a>, name: 'Print' },
-  { icon: <a href="https://t.me/Aras_Ali1"><TelegramIcon color="secondary" target="_blank"/></a>, name: 'Share' },
+  { icon: <a href="https://twitter.com/home" target="_blank"><TwitterIcon /></a>, name: 'Twitter' },
+  { icon: <a href="https://t.me/Aras_Ali1"><TelegramIcon color="secondary" target="_blank"/></a>, name: 'Telegram' },
 ];
 
 export default function PlaygroundSpeedDial() {
-  const [direction, setDirection] = React.useState('down');
+  const [direction] = React.useState('down');
   return (
     <Box sx={{ transform: 'translateZ(0px)', flexGrow: 1 }}>
       <FormControl component="fieldset" sx={{ mt: 1, display: 'flex' }}>
       </FormControl>
       <Box sx={{ position: 'relative', mt: -1.4, height: 320, backgroundColo: 'primary.main', }}>
-        <StyledSpeedDial
-        // style={{color: 'red'}}
-        
+        <StyledSpeedDial        
           ariaLabel="SpeedDial playground example"
           icon={<FavoriteIcon />}
           direction={direction}

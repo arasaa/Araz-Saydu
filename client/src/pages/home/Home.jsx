@@ -12,71 +12,16 @@ const Home = () => {
       <div className="self-pic-Box">
         < img className="self-pic" alt="Araz Saydu" src={araz} />
       </div>
-      <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+   
+   <section className="skill-container">
+     <div className="skill-div">
+      <h1 className="skill-JAVA center">Javascript</h1>
+      <h1 className="skill-REACT">React.js</h1>
+      <h1 className="skill-CSS">CSS</h1>
+      <h1 className="skill-HTML">HTML</h1>
+     </div>
+
+   </section>
     </>
   )
 }
