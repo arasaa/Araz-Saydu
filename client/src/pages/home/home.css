@@ -46,7 +46,18 @@ body {
         width: 100%;
     }
 }
-
+.full{
+    color: #00f2e6;
+}
+.stack{
+    color: #f2ee00;
+}
+.web{
+    color: #0030f2;
+}
+.developer{
+    color: #71f200;
+}
 .self-pic-Box{
     display:flex;
     justify-content:center;
@@ -69,16 +80,18 @@ body {
 }
 .skill-JAVA{
     color: yellow;
+    transition: width 2s;
 }
-.skill-JAVA:hover{
-    /* border-bottom: 2px solid red; */
-}
+
 .skill-JAVA::after{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     content: "";
     position: absolute;
     height: 0.175rem;
-    left: 14.9em;
-    bottom: -1.5em;
+    /* left: 14.9em;
+    bottom: -1.5em; */
     background: rgb(255, 251, 0);
     width: 5em;
 }

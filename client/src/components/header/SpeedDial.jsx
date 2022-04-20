@@ -9,6 +9,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import TelegramIcon from '@material-ui/icons/Telegram';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
 
 const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
   position: 'absolute',
@@ -27,13 +28,14 @@ export default function PlaygroundSpeedDial() {
   const [direction] = React.useState('down');
   return (
     <Box sx={{ transform: 'translateZ(0px)', flexGrow: 1 }}>
-      <FormControl component="fieldset" sx={{ mt: 1, display: 'flex' }}>
+      <FormControl component="fieldset" sx={{ mt: 1, display: 'flex',  }}>
       </FormControl>
-      <Box sx={{ position: 'relative', mt: -1.4, height: 320, backgroundColo: 'primary.main', }}>
+      <Box sx={{ position: 'relative', mt: -1.4, height: 320,}} >
         <StyledSpeedDial        
           ariaLabel="SpeedDial playground example"
-          icon={<FavoriteIcon />}
+          icon={<FavoriteIcon style={{color: '#8a1e2b'}} />}
           direction={direction}
+          
         >
           {actions.map((action) => (
             <SpeedDialAction

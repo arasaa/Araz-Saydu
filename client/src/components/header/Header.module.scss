@@ -28,6 +28,8 @@
             font-weight:bold;
             text-decoration: none;
             color: $light;
+            transition: width 2s;
+          
         }
 
         &_nav {

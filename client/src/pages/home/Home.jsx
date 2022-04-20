@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div className="defines-Head">
-        <h1 className="defines-H1" data-text="FULL STACK WEB DEVELOPER">FULL STACK WEB DEVELOPER</h1>
+        <h1 className="defines-H1" data-text="FULL STACK WEB DEVELOPER"><span className="full">FULL</span><span className="stack"> STACK</span><span className="web"> WEB</span> <span className="developer">DEVELOPER</span></h1>
       </div>
 
       <div className="self-pic-Box">
