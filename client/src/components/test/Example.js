@@ -3,9 +3,11 @@ import './test.css'
 
 const Example = () => {
   return (
-    <div className="container">
-        <div className="loader"><span></span></div>
+      <div className="main">    <div className="container">
+        <div className="loader"><span className="loader-span"> </span></div>
     </div>
+    </div>
+
   )
 }
 

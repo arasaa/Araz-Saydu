@@ -1,9 +1,13 @@
+.main{
+    background: #102626;
+}
 .container {
     position: relative;
     width: 100%;
     display:flex;
     justify-content:center;
     align-items:center;
+    -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
 
 }
 .container .loader{
@@ -12,6 +16,15 @@
     height: 200px;
     border-radius: 50%;
     background: #0d2323;
+    animation: animateRoutet 2s linear infinite;
+}
+@keyframes animateRoutet {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .container .loader::before{
@@ -39,7 +52,7 @@
     border-radius: 50%;
     z-index: 10;
     box-shadow: 0 0 10px #00fff9
-    0 0 10px #00fff9
+
     0 0 20px #00fff9
     0 0 30px #00fff9
     0 0 40px #00fff9
@@ -50,4 +63,13 @@
     0 0 90px #00fff9
     0 0 100px #00fff9;
 
+}
+.container .loader .loader-span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #102626;
+    border-radius: 50%;
 }
