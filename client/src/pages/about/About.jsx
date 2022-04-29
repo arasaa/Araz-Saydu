@@ -4,12 +4,15 @@ import './about.css'
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container hover-2">
       
     <div className="div-about">
       <figure className="figureBoth front"></figure>
-      <figure className="figureBoth back">
-      </figure>
+      <figure className="figureBoth back"></figure>
+    </div>
+    <div className="div-about-2">
+      <figure className="figureBoth front-2"></figure>
+      <figure className="figureBoth back-2"></figure>
     </div>
 
 <section className="about-section">
