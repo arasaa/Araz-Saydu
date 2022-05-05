@@ -3,37 +3,27 @@
     justify-content:center;
     align-items:flex-start; 
   width: 53em;
-    height:41em;
-  background: #2e517d;
+    height:49em;
+  background: #d1d7dd;
   position: relative;
-  left: 70%;
+  left: 65%;
   margin-top: 300px;
   top: 8em;
   transform: translate(-50%, -50%);
   perspective: 1000px;
   border-radius: 1em;
+  border-bottom: 1px solid red;
+  border-top: 1px solid rgb(255, 238, 0);
+  border-left: 1px solid rgb(0, 255, 89);
+  border-right: 1px solid rgb(0, 255, 234);
   
 }
-.hover-2{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start; 
-  width: 53em;
-    height:41em;
-  background: #c9cfd6;
-  position: relative;
-  left: 70%;
-  margin-top: 300px;
-  top: 8em;
-  transform: translate(-50%, -50%);
-  perspective: 1000px;
-  border-radius: 1em;
-}
 .div-about{
-    width: 23em;
-    height:32.7em;
+    height:  47.9em;
+    width: 46.4em;
     position: absolute;
     left: 40px;
+    top: 0.6em;
     background-color: #345b8c;
     transform: rotateY(0deg);
     transform-style: preserve-3d;
@@ -53,31 +43,21 @@
     backface-visibility: hidden;
 }
 .front{
-    background: url(../../assets/araz-saydu.png);
+    /* background: url(../../assets/araz-saydu.png); */
     background-repeat: no-repeat;
     border-left: 1px solid rgb(80, 10, 171);
     border-radius: 1em;
+    /* height: 44em; */
+    }
+    .araz{
+        height:  47.9em;
+        width: 46.4em;
+        border-radius: 10px;
     }
 figure.back{
     background: green;
     transform: rotateY(180deg);
-}
-.div-about-2{
-    width: 23em;
-    height:32.7em;
-    position: absolute;
-    top: 32.7em;
-    /* bottom: 20em; */
-    left: 40px;
-    background-color: #345b8c;
-    transform: rotateY(0deg);
-    transform-style: preserve-3d;
-    transform-origin: left;
-    transition: all 0.5s ease-in;
     border-radius: 1em;
-}
-.hover-2:hover .div-about-2{
-    transform: rotateY(-180deg);
 }
 .figureBoth{
     margin: 0;
@@ -87,21 +67,24 @@ figure.back{
     height: 100%;
     backface-visibility: hidden;
 }
-figure.front-2{
-    background: url(../../assets/araz-saydu.png);
-    background-repeat: no-repeat;
-    border-left: 1px solid rgb(80, 10, 171);
-    border-radius: 1em;
-    }
-figure.back-2{
-    background: green;
-    transform: rotateY(180deg);
-}
 .about-section{
     font-size: 2em;
     font-family: "Helvetica Neue";
     text-align: justify;
-    padding: 0.5em;
+    /* padding: 1.6em; */
+    padding: 0em 2em 0em 2em;
+   
+  
+}
+.section-text{
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    border-bottom: 1px solid rgba(0, 46, 111, 0.446);
+    border-top: 1px solid rgba(77, 122, 0, 0.638);
+    border-left: 1px solid rgb(62, 160, 96);
+    border-right: 1px solid rgb(5, 126, 133);
+    background: #F7F7F7;
+    /* outline: 1px solid rgb(2, 98, 113); */
+    color: #425C00;
 }
 ::-webkit-scrollbar{
     width: 20px;

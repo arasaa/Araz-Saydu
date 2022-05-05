@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.css'
+import araz from '../../assets/araz-saydu.png'
 
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
     <div className="about-container hover-2">
       
     <div className="div-about">
-      <figure className="figureBoth front"></figure>
+      <figure className="figureBoth front"> <img className="araz" src={araz}/></figure>
       <figure className="figureBoth back"></figure>
     </div>
     <div className="div-about-2">
@@ -16,7 +17,7 @@ const About = () => {
     </div>
 
 <section className="about-section">
-    <p>
+    <p className='section-text'>
       Araz Saydu,
       was born in Syria, Qamishli.
       It all started when i wanted to create a portfolio for me and write there  some thoughts.
