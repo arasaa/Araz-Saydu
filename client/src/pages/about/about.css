@@ -47,7 +47,13 @@
     background-repeat: no-repeat;
     border-left: 1px solid rgb(80, 10, 171);
     border-radius: 1em;
+    background-size: cover;
     /* height: 44em; */
+    }
+    .aras{
+        height:  47.9em;
+        width: 46.4em;
+        border-radius: 10px;
     }
     .araz{
         height:  47.9em;
@@ -58,6 +64,7 @@ figure.back{
     background: green;
     transform: rotateY(180deg);
     border-radius: 1em;
+    background-size: cover;
 }
 .figureBoth{
     margin: 0;
@@ -72,7 +79,8 @@ figure.back{
     font-family: "Helvetica Neue";
     text-align: justify;
     /* padding: 1.6em; */
-    padding: 0em 2em 0em 2em;
+    padding: 0em 1.4em 0em 2em;
+    margin-top: -0.3em;
    
   
 }

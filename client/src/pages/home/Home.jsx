@@ -20,6 +20,12 @@ const Home = () => {
       <h1 className="skill-CSS">CSS</h1>
       <h1 className="skill-HTML">HTML</h1>
      </div>
+     <div className="skill-div2">
+     <h1 className="skill-Express center2">node.<span className="j">js</span></h1>
+      <h1 className="skill-Express center2">express<span className="j">js</span></h1>
+      <h1 className="skill-REACT">React.js</h1>
+      <h1 className="skill-CSS">CSS</h1>
+     </div>
 
    </section>
     </>

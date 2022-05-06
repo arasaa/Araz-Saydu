@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import araz from '../../assets/araz-saydu.png'
+import aras from '../../assets/aras.jpg'
 
 
 const About = () => {
@@ -9,7 +10,7 @@ const About = () => {
       
     <div className="div-about">
       <figure className="figureBoth front"> <img className="araz" src={araz}/></figure>
-      <figure className="figureBoth back"></figure>
+      <figure className="figureBoth back"><img className="aras" src={aras}/></figure>
     </div>
     <div className="div-about-2">
       <figure className="figureBoth front-2"></figure>

@@ -71,6 +71,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    gap: 10em;
 }
 .skill-div{
     color: white;
@@ -78,9 +79,32 @@ body {
     font-family: 'Architects Daughter', cursive;
 
 }
+.skill-div2{
+    color: white;
+    font-size: 2em;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+}
 .skill-JAVA{
     color: yellow;
     transition: width 2s;
+   
+}
+.skill-Express{
+    color: rgb(221, 216, 171);
+    transition: width 2s;
+   
+}
+.skill-Express:hover{
+    border-top: 1px solid rgb(221, 216, 171);
+   
+}
+.j{
+    color: yellow;
+    font-size: 1.5em;
+    margin-left: 3px;
+    text-shadow: 1px 1px 2px rgb(241, 0, 0) ;
+    
 }
 
 .skill-JAVA::after{
@@ -93,7 +117,7 @@ body {
     /* left: 14.9em;
     bottom: -1.5em; */
     background: rgb(255, 251, 0);
-    width: 5em;
+    width: 4.5em;
 }
 
 .center::after{
@@ -101,5 +125,24 @@ body {
     transition: transform 0.3s ease;
 }
 .center:hover::after{
+    transform: scale(1, 1);
+}
+.skill-Express::after{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    content: "";
+    position: absolute;
+    height: 0.175rem;
+    /* left: 14.9em;
+    bottom: -1.5em; */
+    background: rgb(221, 216, 171);
+    width: 6em;
+}
+.center2::after{
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+.center2:hover::after{
     transform: scale(1, 1);
 }
