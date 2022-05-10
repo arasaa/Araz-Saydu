@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import  './home.css';
 import araz from '../../assets/araz-saydu.png';
+import PopupModal from '../../components/popup-modal/PopupModal';
 
 const Home = () => {
+  const [closeModal , setCloseModal] = useState(true);
+ 
+ 
+  useEffect(() => {
+    setTimeout(() => {
+      setCloseModal(true);
+    },1000);
+  }, [])
+
   return (
     <>
       <div className="defines-Head">
@@ -28,6 +38,13 @@ const Home = () => {
      </div>
 
    </section>
+   <PopupModal trigger={closeModal} setTrigger={setCloseModal}>
+     <h3>please note:</h3>
+     <ol>
+       <li>The entire website is under developing</li>
+       <li>there is still no mobile draft</li>
+     </ol>
+   </PopupModal>
     </>
   )
 }
