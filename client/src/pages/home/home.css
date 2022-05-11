@@ -77,33 +77,48 @@ body {
     color: white;
     font-size: 2em;
     font-family: 'Architects Daughter', cursive;
-
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 .skill-div2{
     color: white;
     font-size: 2em;
     font-family: 'Architects Daughter', cursive;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
 .skill-JAVA{
     color: yellow;
     transition: width 2s;
+
    
 }
-.skill-Express{
+.skill-backend{
     color: rgb(221, 216, 171);
     transition: width 2s;
    
 }
-.skill-Express:hover{
-    border-top: 1px solid rgb(221, 216, 171);
-   
+.react{
+    color: rgba(6, 133, 231, 0.835);
+}
+.css{
+    color: rgb(54, 218, 255);
+}
+.html{
+    color: rgb(214, 2, 119);
 }
 .j{
-    color: yellow;
+    color: rgb(255, 255, 0);
     font-size: 1.5em;
     margin-left: 3px;
-    text-shadow: 1px 1px 2px rgb(241, 0, 0) ;
+    text-shadow: 1px 1px 2px rgba(255, 5, 5, 0.816) ;
+    
+}
+.m{
+    color: rgba(15, 15, 12, 0.718);
+    font-size: 1.5em;
+    margin-left: 3px;
+    text-shadow: 1px 1px 2px rgb(0, 241, 12) ;
     
 }
 
@@ -117,17 +132,17 @@ body {
     /* left: 14.9em;
     bottom: -1.5em; */
     background: rgb(255, 251, 0);
-    width: 4.5em;
+    width: 6.5em;
 }
 
 .center::after{
     transform: scale(0, 1);
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 .center:hover::after{
     transform: scale(1, 1);
 }
-.skill-Express::after{
+.skill-backend::after{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -137,11 +152,11 @@ body {
     /* left: 14.9em;
     bottom: -1.5em; */
     background: rgb(221, 216, 171);
-    width: 6em;
+    width: 7em;
 }
 .center2::after{
     transform: scale(0, 1);
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 .center2:hover::after{
     transform: scale(1, 1);

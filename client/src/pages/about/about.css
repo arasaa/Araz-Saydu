@@ -3,7 +3,7 @@
     justify-content:center;
     align-items:flex-start; 
   width: 53em;
-    height:49em;
+    height:50.8em;
   background: #d1d7dd;
   position: relative;
   left: 65%;
@@ -51,12 +51,12 @@
     /* height: 44em; */
     }
     .aras{
-        height:  47.9em;
+        height:49.6em;
         width: 46.4em;
         border-radius: 10px;
     }
     .araz{
-        height:  47.9em;
+        height:49.6em;
         width: 46.4em;
         border-radius: 10px;
     }
@@ -75,7 +75,7 @@ figure.back{
     backface-visibility: hidden;
 }
 .about-section{
-    font-size: 2em;
+    font-size: 1.9em;
     font-family: "Helvetica Neue";
     text-align: justify;
     /* padding: 1.6em; */

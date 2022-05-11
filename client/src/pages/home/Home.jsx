@@ -26,15 +26,15 @@ const Home = () => {
    <section className="skill-container">
      <div className="skill-div">
       <h1 className="skill-JAVA center">Javascript</h1>
-      <h1 className="skill-REACT">React.js</h1>
-      <h1 className="skill-CSS">CSS</h1>
-      <h1 className="skill-HTML">HTML</h1>
+      <h1 className="skill-JAVA center"><span className="react">React.</span><span className="j">js</span></h1>
+      <h1 className="skill-JAVA center css">CSS</h1>
+      <h1 className="skill-JAVA center html">HTML</h1>
      </div>
      <div className="skill-div2">
-     <h1 className="skill-Express center2">node.<span className="j">js</span></h1>
-      <h1 className="skill-Express center2">express<span className="j">js</span></h1>
-      <h1 className="skill-REACT">React.js</h1>
-      <h1 className="skill-CSS">CSS</h1>
+     <h1 className="skill-backend center2">node.<span className="j">js</span></h1>
+      <h1 className="skill-backend center2">express<span className="j">js</span></h1>
+      <h1 className="skill-backend center2"><span className="m">M</span>ongo<span className="m">DB</span></h1>
+      <h1 className="skill-backend center2">mongoose</h1>
      </div>
 
    </section>
