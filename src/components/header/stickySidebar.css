@@ -1,0 +1,29 @@
+.sticky-sidebar-lesson {
+  display: flex;
+  justify-content: flex-start;
+ align-items: center;
+ position: relative;
+
+} 
+.sticky-sidebar {
+ box-sizing: border-box;
+ border-radius: 2px;
+ box-shadow:  1px 1px 5px 0px  #01fe87;
+ position: fixed;
+ top: 23em;
+ left: 1em; 
+ width: 0.1em;
+ background-color: black;
+ height: 18.3em;
+
+}
+.sticky-sidebar:hover{
+  height: 18.3em;
+  background-color: black;
+  box-shadow:  1px 1px 5px 0px  #c3295d;
+}
+.PlaygroundSpeedDial{
+  width: 4em;
+  position: absolute;
+  left: 0.1em;
+}
