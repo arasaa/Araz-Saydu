@@ -1,14 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './projects.css'
 import airQuality from '../../assets/air-quality.png'
 
 const Projects = () => {
+  const [isShown, setIsShown] = useState(false)
+  function changeOpacity(e) {
+    if(isShown) {
+      e.target.style.background = 'red';
+    }
+  }
   return (
     <>
     <div className="project-container">
       <h1 className="project-title">Air-Quality</h1>
       <div className="project-box">
-        <img className="air-quality" src={airQuality}></img>
+        <figure className="project-about-container"
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}
+
+        >
+        <img className="air-quality" src={airQuality} alt="air quality" 
+        
+        ></img>
+       {isShown && (
+        <figcaption className="project-figcaption" onMouseEnter={changeOpacity}>
+        <h2 className="project-heading-about about-visibile">About Air-Quality</h2>
+        <p className="project-about about-visibile">lorem ipsum dolor sit am
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        </p>
+        </figcaption>
+        )}
+        </figure>
+        
+        {/* <img className="air-quality" src={airQuality}></img> */}
       </div>
     </div>
     </>
