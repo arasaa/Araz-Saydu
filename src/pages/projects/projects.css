@@ -1,0 +1,27 @@
+.project-container{
+    border-top: 1px solid red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height: 100%;
+    top: 2em;
+}
+.project-title{
+    font-size: 4em;
+    color: #D7C49EFF;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+.project-title:hover{
+    color: #2DA8D8FF;
+}
+.project-box{
+    border-top: 1px solid green;
+    height: 100%;
+    width: 70%;
+}
+.air-quality{
+    width: 100%;
+    height: 100%;
+}
