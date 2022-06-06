@@ -6,7 +6,7 @@ const Projects = () => {
   const [isShown, setIsShown] = useState(false)
   function changeOpacity(e) {
     if(isShown) {
-      e.target.style.background = 'red';
+      e.target.style.background = '#DEB887';
     }
   }
   return (
@@ -23,9 +23,24 @@ const Projects = () => {
         
         ></img>
        {isShown && (
-        <figcaption className="project-figcaption" onMouseEnter={changeOpacity}>
-        <h2 className="project-heading-about about-visibile">About Air-Quality</h2>
+         <figcaption className="project-figcaption" onMouseEnter={changeOpacity}>
+           <a href="https://www.youtube.com">
+              <button>visit Air-Quality</button>
+          </a>   
+          <h2 className="project-heading-about about-visibile">About Air-Quality</h2>
         <p className="project-about about-visibile">lorem ipsum dolor sit am
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
         lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
         lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
         lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
