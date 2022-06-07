@@ -24,8 +24,8 @@ const Projects = () => {
         ></img>
        {isShown && (
          <figcaption className="project-figcaption" onMouseEnter={changeOpacity}>
-           <a href="https://www.youtube.com">
-              <button>visit Air-Quality</button>
+           <a href="https://www.youtube.com" className="airQualityLink" target="_blank" alt="Air Quality" rel="noreferrer">
+              <button className="airQualityButton">visit Air-Quality</button>
           </a>   
           <h2 className="project-heading-about about-visibile">About Air-Quality</h2>
         <p className="project-about about-visibile">lorem ipsum dolor sit am
