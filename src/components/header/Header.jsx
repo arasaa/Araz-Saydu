@@ -69,9 +69,7 @@ const Header = () => {
             <li onClick={closeMenu}>
               <Link to={"/projects"} >Projects</Link>
             </li>
-            <li onClick={closeMenu}>
-              <Link to={"/gallery"} >Gallery</Link>
-            </li>
+      
           </ul>
           {/* button is inside NAV */}
           {/* <button>CTA page</button> */}

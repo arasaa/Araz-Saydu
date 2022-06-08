@@ -28,25 +28,23 @@ const Projects = () => {
               <button className="airQualityButton">visit Air-Quality</button>
           </a>   
           <h2 className="project-heading-about about-visibile">About Air-Quality</h2>
-        <p className="project-about about-visibile">lorem ipsum dolor sit am
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
-        lorem ipsum dolor sit amlorem ipsum dolor sit am<br />
+        <p className="project-about about-visibile">
+        <h3>Introduction</h3>
+       <section>
+         Air Quality is a project aimes to provide information 
+         for instence people who care or want to know about air pollution.
+         </section>
+         <h3>Technologies</h3>
+       <section>
+         Full stack website<br/>
+         -React.js<br/>
+         -Nodejs<br/>
+         -Express.js<br/>
+         -CSS<br/>
+         -HTML<br/>
+         -Bootstrap<br/>
+         -Mongodb<br/>        
+      </section>
         </p>
         </figcaption>
         )}

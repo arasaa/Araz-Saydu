@@ -6,9 +6,9 @@
     height:50.8em;
   background: #d1d7dd;
   position: relative;
-  left: 65%;
+  left: 60%;
   margin-top: 300px;
-  top: 8em;
+  top: 15em;
   transform: translate(-50%, -50%);
   perspective: 1000px;
   border-radius: 1em;
@@ -80,7 +80,7 @@ figure.back{
     text-align: justify;
     /* padding: 1.6em; */
     padding: 0em 1.4em 0em 2em;
-    margin-top: -0.3em;
+    margin-top: -0.6em;
    
   
 }
@@ -91,9 +91,26 @@ figure.back{
     border-left: 1px solid rgb(62, 160, 96);
     border-right: 1px solid rgb(5, 126, 133);
     background: #101820FF;
+    height: 25.5em;
     /* outline: 1px solid rgb(2, 98, 113); */
     color: rgba(228, 207, 19, 0.584);
+
+    /*  */
+    border-right: .15em solid orange; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 ::-webkit-scrollbar{
     width: 20px;
 }
