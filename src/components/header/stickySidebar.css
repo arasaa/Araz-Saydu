@@ -27,3 +27,8 @@
   position: absolute;
   left: 0.1em;
 }
+
+/* media */
+@media (min-width: 220px) and (max-width: 600px) {
+   
+}

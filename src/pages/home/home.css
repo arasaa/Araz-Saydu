@@ -8,8 +8,6 @@ body {
 .defines-Head{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* min-height: 100vh; */
     background: #252839;
 }
 
@@ -161,3 +159,30 @@ body {
 .center2:hover::after{
     transform: scale(1, 1);
 }
+
+/* media */
+@media (min-width: 220px) and (max-width: 600px) {
+    .skill-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .skill-div{
+        /* color: white; */
+        margin-top: 3em;
+        margin-bottom: -10em;
+        font-size: 1em;
+        font-family: 'Architects Daughter', cursive;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        /* margin: 0 auto; */
+    }
+    .skill-div2{
+        color: white;
+        font-size: 1em;
+        font-family: 'Architects Daughter', cursive;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+  }

@@ -29,6 +29,9 @@ const Home = () => {
       <h1 className="skill-JAVA center"><span className="react">React.</span><span className="j">js</span></h1>
       <h1 className="skill-JAVA center css">CSS</h1>
       <h1 className="skill-JAVA center html">HTML</h1>
+     {/* </div>
+     <p className="backend">backend</p>
+     <div> */}
      </div>
      <div className="skill-div2">
      <h1 className="skill-backend center2">node.<span className="j">js</span></h1>
