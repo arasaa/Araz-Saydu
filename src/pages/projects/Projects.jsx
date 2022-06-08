@@ -24,7 +24,7 @@ const Projects = () => {
         ></img>
        {isShown && (
          <figcaption className="project-figcaption" onMouseEnter={changeOpacity}>
-           <a href="https://www.youtube.com" className="airQualityLink" target="_blank" alt="Air Quality" rel="noreferrer">
+           <a href="https://air-quality-p.herokuapp.com/" className="airQualityLink" target="_blank" alt="Air Quality" rel="noreferrer">
               <button className="airQualityButton">visit Air-Quality</button>
           </a>   
           <h2 className="project-heading-about about-visibile">About Air-Quality</h2>
